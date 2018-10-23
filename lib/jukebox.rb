@@ -46,8 +46,8 @@ def run(songs)
   until input == "exit"
     puts "Please enter a command:"
     input = gets.chomp
-    list if input = "list"
-    play if input = "play"
+    list(songs) if input = "list"
+    play(songs) if input = "play"
     help if input = "help"
     exit_jukebox if input = "exit"
   end
