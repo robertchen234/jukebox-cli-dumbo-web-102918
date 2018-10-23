@@ -28,7 +28,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
   songs.find do |song|
-    if song.include?(input) || input.to_i - 1 == songs.index(track)
+    if song.include?(input) || input.to_i - 1 == songs.index(song)
       puts "Playing #{song}"
     else
       puts "Invalid input, please try again"
